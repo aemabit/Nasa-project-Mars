@@ -1,0 +1,289 @@
+.wrapper-body-home{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first-view-home{
+    width: 100%;
+    height: 100vh;
+}
+
+.first-view-home img {
+    transform: rotate(180deg);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    animation: sun 10s forwards;
+}
+
+@keyframes sun {
+    from{
+        opacity: 0.35;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.welcome-to-mars {
+    color: rgba(255, 255, 255, 1);
+    font-size: 12em;
+    display: flex;
+    margin-top: -320px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    animation: sunTwo 10s forwards;
+}
+
+.welcome-to-mars p {
+    font-size: 0.1em;
+    color: rgba(255, 255, 255, 0.5)
+}
+
+@keyframes sunTwo {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.beauty-line {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    height: 3px;
+    width: 50%;
+    z-index: 2;
+}
+
+.firstOne-view-home{
+    width: 80%;
+    height: 80vh;
+    margin-top:100px;
+}
+
+.beta-view-home{
+    margin-top: 100px;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.nav-go-to,
+.mast-go-to {
+    width: 45%;
+    height: auto;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+
+.nav-go-to a,
+.mast-go-to a{
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.full-page-mast,
+.full-page-nav {
+    width: 90vw;
+    height: 90vh;
+}
+
+.to-mega-effect{
+    text-decoration: underline;
+    color: rgba(0, 81, 255, 0.8);
+    cursor: pointer;
+}
+
+.second-title-mars{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.second-title-mars span {
+    color: rgba(255, 255, 255, 1);
+    font-size: 8em;
+}
+
+.second-view-home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 100px 0px 100px 0px;
+}
+
+.links-to-mars{
+    width: 90%;
+    height: 100vh;
+    color: rgba(255,255,255,0.65);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.links-to-mars a {
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+}
+
+.box-link-explorer {
+    display: flex;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.other-link {
+    font-size: 2.5em;
+    padding: 15px;
+}
+
+.o-1,
+.o-2,
+.o-3,
+.o-4,
+.o-5{
+    animation: float 5s infinite;
+}
+
+.o-1:hover,
+.o-2:hover,
+.o-3:hover,
+.o-4:hover,
+.o-5:hover {
+    animation-play-state: paused;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 2px 2px 50px rgba(255,255,255,0.65)
+  }
+
+@keyframes float {
+	0%, 100% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	50% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+}
+
+.beauty-line-ex {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    height: 3px;
+    width: 30%;
+    z-index: 2;
+}
+
+.know-curiosity {
+    margin: 100px 0 100px 0;
+    height: 80vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0px 0px 100px 100px rgba(0, 0, 0, 1);
+    transition: 5s;
+}
+
+.know-curiosity:hover {
+    box-shadow: none;
+}
+
+.know-curiosity img {
+    height: 100%;
+    z-index: -2;
+}
+
+.second-title-mars p {
+    font-size: 1.5em;
+    color: rgba(255,255,255,0.65);
+    text-transform: uppercase;
+}
+
+.wrapper-know-curisity {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2){
+    
+        .welcome-to-mars {
+            font-size: 7em;
+        }
+
+        .nav-go-to,
+        .mast-go-to {
+            font-size: 1.5em;
+        }
+
+        .beta-view-home {
+            height: 60vh;
+        }
+
+        .firstOne-view-home {
+            height: 50vh;
+            margin-top: 0;
+        }
+
+        .second-title-mars span{
+            font-size: 2em;
+        }
+
+        .other-link {
+            font-size: 1.25em;
+        }
+
+        .box-link-explorer {
+            height: 15%;
+        }
+
+        .links-to-mars{
+            height: 75vh;
+            justify-content: space-evenly;
+        }
+
+        .second-view-home {
+            margin: 0;
+        }
+
+        .second-title-mars p {
+            display: none;
+        }
+
+        .know-curiosity {
+            height: 30vh;
+            box-shadow: inset 0px 0px 60px 40px rgba(0, 0, 0, 1);
+        }
+
+        .second-title-mars{
+            margin-top: 0;
+        }
+
+}
